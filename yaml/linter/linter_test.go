@@ -33,7 +33,7 @@ func TestLint(t *testing.T) {
 			path:    "testdata/invalid_arch.yml",
 			trusted: false,
 			invalid: true,
-			message: "linter: unsupported architecture: s390x",
+			message: "linter: unsupported architecture: avr",
 		},
 		{
 			path:    "testdata/missing_build_image.yml",
