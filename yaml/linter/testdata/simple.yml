@@ -35,4 +35,21 @@ steps:
 
 depends_on:
 - amd64
+
+---
+kind: pipeline
+name: any
+
+platform:
+  arch: any
+
+steps:
+- name: test
+  image: golang
+  commands:
+  - go build
+  - go test
+
+depends_on:
+- amd64
 ...

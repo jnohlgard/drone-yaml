@@ -27,6 +27,7 @@ var os = map[string]struct{}{
 }
 
 var arch = map[string]struct{}{
+	"any":     struct{}{},
 	"arm":     struct{}{},
 	"arm64":   struct{}{},
 	"amd64":   struct{}{},
